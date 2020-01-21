@@ -1,0 +1,8 @@
+applications:
+- name: domgatewayservice
+  instances: 2
+  path: target/GatewayService-0.0.1-SNAPSHOT.jar
+  memory: 750M
+  disk_quota: 650M
+  services:
+   - p-mysql-db

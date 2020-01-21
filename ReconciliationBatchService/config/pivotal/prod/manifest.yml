@@ -1,0 +1,12 @@
+applications:
+- name: reconciliationbatchservice
+  instances: 2
+  disk_quota: 650M
+  memory: 1G
+  path: ../../../target/ReconciliationBatchService-0.0.1-SNAPSHOT.jar
+  services:
+   - belk_dom_createupdate
+   - belk_dom_orderdetails
+   - recon-batch-scheduler
+  env:
+    spring.profiles.active: prod   

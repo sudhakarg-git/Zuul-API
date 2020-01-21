@@ -1,0 +1,13 @@
+---
+applications:
+  - name: authorizationservice
+    instances: 1
+    memory: 750M
+    disk_quota: 650M    
+    path: target/AuthorizationService-0.0.1-SNAPSHOT.jar
+    services:
+      - service-registry
+      - config-server
+      - p-mysql
+    env:
+      spring.profiles.active: dev

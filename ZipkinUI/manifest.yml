@@ -1,0 +1,7 @@
+---
+applications:
+  - name: zipkinservice
+    instances: 1
+    memory: 750M
+    disk_quota: 650M
+    path: /zipkin-server-2.16.0-exec.jar
